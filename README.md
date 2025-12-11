@@ -9,9 +9,9 @@
 
 [Big Bazaar Dashboard - Power Bi](https://github.com/hardikjhalani263/Big-Bazaar---sql-project-/blob/main/Big%20Bazaar%20Dashbord.png)
 
-- **Business Problem:**
+- **Business Problem:** These queries together help solve the major business problem of improving sales, optimizing inventory, identifying top-performing products/outlets, understanding customer demand, and making better strategic decisions across stores and product categories.
 
-- - **How I Plan On Solving the Problem:**
+- - **How I Plan On Solving the Problem:**  In helping BigBazaar gather valuable insights from their extensive datashet, I will be utilizing SQL and a data visualization tool like Power bi to extract relevant information, and conduct insightful analyses. By leveraging SQL's functions, I can uncover key metrics such as viewer ratings, popularity trends, genre preferences, and viewership patterns. Once the data has been extracted and prepared, I will leverage Power bi to present the findings. I plan on creating a dynamic dashboard in power bi that enables users to delve into specific viewer demographics, or geographical regions
 
 ## Questions I Wanted To Answer From the Dataset:
 
