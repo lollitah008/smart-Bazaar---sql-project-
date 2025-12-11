@@ -1,4 +1,4 @@
-# <p align="center">Big-Bazaar grocery sales Project</p>
+# <p align="center">smart-Bazaar grocery sales Project</p>
 
 
 **Tools Used:** Excel, MySQL, Tableau
@@ -21,7 +21,7 @@ SELECT
   Item_Type,
   SUM(total_Sales) AS total_sales,
   AVG(total_Sales) AS avg_sales_per_item
-FROM Big_bazaar
+FROM smart_bazaar
 GROUP BY Item_Type
 ORDER BY total_sales DESC;
 ```
@@ -35,7 +35,7 @@ It identifies top-performing item types, highlights low-selling categories, and 
 SELECT
     Outlet_Location_Type,
     SUM(Item_Weight) AS total_weight
-FROM big_bazaar
+FROM smart_bazaar
 GROUP BY Outlet_Location_Type
 ORDER BY total_weight DESC;
 ```
@@ -51,7 +51,7 @@ SELECT
     MIN(total_sales) AS min_sale,
     MAX(total_sales) AS max_sale,
     AVG(total_sales) AS avg_sale
-FROM big_bazaar
+FROM smart_bazaar
 GROUP BY outlet_type
 ORDER BY AVG(total_sales) DESC;
 ```
@@ -65,7 +65,7 @@ It allows the business to identify high-performing outlet formats, detect underp
 SELECT
   Outlet_Identifier,      
   SUM(total_Sales) AS total_revenue
-FROM big_bazaar
+FROM smart_bazaar
 GROUP BY Outlet_Identifier
 ORDER BY total_revenue DESC
 LIMIT 5;
@@ -81,7 +81,7 @@ It helps the business focus on best-performing stores, understand what drives th
 SELECT Item_Type,
   SUM(total_Sales) AS total_sales,
   ROUND(100.0 * SUM(total_Sales) / SUM(SUM(total_Sales)) OVER (), 2) AS per_of_sale
-FROM big_bazaar
+FROM smart_bazaar
 GROUP BY Item_Type
 ORDER BY total_sales DESC;
 ```
@@ -94,14 +94,14 @@ It helps the business identify which product types drive revenue, prioritize hig
 ## 6 . Records where Item_Visibility > average visibility
 ```mysql 
 SELECT *
-FROM big_bazaar
-WHERE Item_Visibility > (SELECT AVG(Item_Visibility) FROM big_bazaar);
+FROM smart_bazaar
+WHERE Item_Visibility > (SELECT AVG(Item_Visibility) FROM smart_bazaar);
 ```
 ## 7. Items sold in multiple item types
 top 10 
 ```mysql
 select item_identifier , item_type , count(item_type) as outlet_type
-from blinkit_grocery 
+from smart_bazaar
 group by item_identifier , item_type
 HAVING COUNT(DISTINCT Outlet_Type) > 1
 order by outlet_type desc
@@ -112,7 +112,7 @@ below 10
 
 ```
 select item_identifier , item_type , count(item_type) as outlet_type
-from blinkit_grocery 
+from smart_bazaar
 group by item_identifier , item_type
 HAVING COUNT(DISTINCT Outlet_Type) > 1
 order by outlet_type desc
@@ -131,7 +131,7 @@ SELECT
   RANK() OVER (PARTITION BY Outlet_Type ORDER BY total_sales DESC) AS sales_rank
 FROM (
   SELECT Outlet_Type, Item_identifier, Item_type, SUM(total_Sales) AS total_sales
-  FROM big_bazaar
+  FROM smart_bazaar
   GROUP BY Outlet_Type, Item_identifier, Item_type) s
 ORDER BY Outlet_Type, sales_rank;
 ```
@@ -148,7 +148,7 @@ SELECT
     CAST(AVG(total_sales) AS DECIMAL(10,1)) AS avg_total_sales,
     COUNT(*) AS no_of_item,
     CAST(AVG(rating) AS DECIMAL(10,2)) AS avg_rating
-FROM big_bazaar
+FROM smart_bazaar
 WHERE outlet_establishment_year = 2000
 GROUP BY item_fat_content,item_type
 ORDER BY total_sales DESC;
@@ -164,7 +164,7 @@ WITH type_sales AS (
     SELECT Item_Type,
 	SUM(total_Sales) AS sales,SUM(total_Sales) * 100.0 
 	/ SUM(SUM(total_Sales)) OVER () AS pct_of_total
-    FROM big_bazaar
+    FROM smart_bazaar
     GROUP BY Item_Type
 )
 SELECT * FROM type_sales
@@ -185,7 +185,7 @@ FROM (
         outlet_identifier,outlet_size,outlet_type,item_type,Item_Fat_Content,item_weight,
         SUM(total_sales) AS sales,
         DENSE_RANK() OVER (PARTITION BY outlet_identifier ORDER BY SUM(total_sales) DESC) AS sale_rank
-    FROM big_bazaar
+    FROM smart_bazaar
     GROUP BY
         outlet_identifier,outlet_size,outlet_type,item_type,Item_Fat_Content,item_weight
 ) t
