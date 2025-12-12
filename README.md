@@ -5,7 +5,7 @@
 
 [Datasets Used](https://github.com/hardikjhalani263/Big-Bazaar---sql-project-/blob/main/Big%20Bazaar.csv)
 
-[SQL Analysis (Code)](https://github.com/hardikjhalani263/Big-Bazaar---sql-project-/blob/main/big%20bazaar%20script.sql)
+[SQL Analysis (Code)](https://github.com/hardikjhalani263/smart-Bazaar---sql-project-/blob/main/smart%20bazaar.sql)
 
 [smart Bazaar Dashboard - Power Bi](https://github.com/hardikjhalani263/smart-Bazaar---sql-project-/blob/main/Screenshot%202025-12-12%20005653.png)
 
